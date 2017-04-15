@@ -15,7 +15,44 @@
 				document.card.key4.focus();
 			}
 		}
+		//运动事件监听
+		if (window.DeviceMotionEvent) {
+		    window.addEventListener('devicemotion',deviceMotionHandler,false);
+		}
 
+		//获取加速度信息
+		//通过监听上一步获取到的x, y, z 值在一定时间范围内的变化率，进行设备是否有进行晃动的判断。
+		//而为了防止正常移动的误判，需要给该变化率设置一个合适的临界值。
+		var SHAKE_THRESHOLD = 4000;
+		var last_update = 0;
+		var x, y, z, last_x = 0, last_y = 0, last_z = 0;
+		function deviceMotionHandler(eventData) {
+	        var acceleration =eventData.accelerationIncludingGravity;
+	        var curTime = new Date().getTime();
+	        if ((curTime-last_update)> 10) {
+	            var diffTime = curTime -last_update;
+	            last_update = curTime;
+	            x = acceleration.x;
+	            y = acceleration.y;
+	            z = acceleration.z;
+	            var speed = Math.abs(x +y + z - last_x - last_y - last_z) / diffTime * 10000;
+	            if (speed > SHAKE_THRESHOLD) {
+	               input[0].value=1;
+	               input[1].value=3;
+	               input[2].value=0;
+	               input[3].value=2;
+	               tips.innerHTML='密码正确'; 
+	               setTimeout(function(){
+	            
+	               		page2.style.transform='scale(1)'
+	               },300)
+	              
+	            }
+	            last_x = x;
+	            last_y = y;
+	            last_z = z;
+	        }
+		}
 		var page1=document.querySelector('.page1') 
 		var page2=document.querySelector('.page2') 
 		var lockNum=document.querySelector('.lock_num_ul');
@@ -95,46 +132,7 @@
 				}
 		}
 
-		var arr=[
-			'林玲',
-			'陈思',
-			'邹益萍',
-			'万文奇',
-			'黄延球',
-			'闫玉林',
-			'曾精成',
-			'张指南',
-			'林焕杨',
-			'陈有为',
-			'廖子奕',
-			'吴超',
-			'王琼',
-			'郑梦真',
-			'陈霞',
-			'游丽杰',
-			'李敏',
-			'徐悦',
-			'查鑫',
-			'方翠',
-			'张瑶',
-			'于明珠',
-			'欧阳夜兴',
-			'赖丽丽',
-			'夏梦',
-			'黄春华',
-			'马范范',
-			'罗婷',
-			'吴惠妍',
-			'陶媛媛',
-			'彭星云',
-			'鄢凤珍',
-			'陈丹',
-			'王玉梅',
-			'何静',
-			'汪晶晶',
-			'陈淑玲',
-			'袁梦林',
-			'陈美倩',
+		var arr=['林玲','陈思','邹益萍','万文奇','黄延球','闫玉林','曾精成','张指南','林焕杨','陈有为','廖子奕','吴超','王琼','郑梦真','陈霞','游丽杰','李敏','徐悦','查鑫','方翠','张瑶','于明珠','欧阳夜兴','赖丽丽','夏梦','黄春华','马范范','罗婷','吴惠妍','陶媛媛','彭星云','鄢凤珍','陈丹','王玉梅','何静','汪晶晶','陈淑玲','袁梦林','陈美倩',
 		]
 		var name_ul=document.querySelector('.name_ul')
 		var name_li=name_ul.querySelectorAll('li')
@@ -144,11 +142,11 @@
 			loop:true,
 			onTransitionEnd:function(swiper){
 				var swiper_slide=document.querySelectorAll('.swiper-slide')
-				var slide_active=document.querySelector('.swiper-slide-active')
+				
 
-				for (var i = 0; i < swiper_slide.length; i++) {
-					swiper_slide[i].setAttribute('data-id',i)
-				}
+				// for (var i = 0; i < swiper_slide.length; i++) {
+				// 	swiper_slide[i].setAttribute('data-id',i)
+				// }
 				console.log(swiper.realIndex)
 				for (var i = 0; i < name_li.length; i++) {
 					name_li[i].addEventListener('touchstart',function(){
@@ -157,18 +155,23 @@
 					})
 				}
 				btn_true.addEventListener('touchstart',function(){
-					if (i_name.innerHTML==arr[swiper.realIndex]) {
+					var slide_active=document.querySelector('.swiper-slide-active')
+					if (i_name.innerHTML==slide_active.getAttribute('data-id')) {
 						console.log('正确')
 						console.log(slide_active.querySelector('img'))
 						num=15;
 						var timer
 						timer=setInterval(function(){
-							num--
+							num--;
 							slide_active.querySelector('img').style.webkitFilter="blur("+num+"px)"
 						// slide_active.querySelector('img').style.webkitFilter=non;
 						slide_active.querySelector('img').style.filter="blur("+num+"px)"
 							if (num<0) {
-								clearInterval(timer)
+								clearInterval(timer);
+								setTimeout(function(){
+									swiper.slideNext();
+								},500)
+								
 							}
 						},40)
 						
