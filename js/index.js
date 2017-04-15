@@ -23,7 +23,7 @@
 		//获取加速度信息
 		//通过监听上一步获取到的x, y, z 值在一定时间范围内的变化率，进行设备是否有进行晃动的判断。
 		//而为了防止正常移动的误判，需要给该变化率设置一个合适的临界值。
-		var SHAKE_THRESHOLD = 3000;
+		var SHAKE_THRESHOLD = 4000;
 	    var last_update = 0;
 	    var last_time = 0;
 	    var x;
@@ -55,6 +55,7 @@
 	                tips.innerHTML='密码正确'; 
 	                setTimeout(function(){
 	               		page2.style.transform='scale(1)'
+	               		page2.style.webkitTransform='scale(1)'
 	                },700)
 	              
 	            }
@@ -95,6 +96,7 @@
 					tips.innerHTML='密码正确';
 					// page1.style.display='none'
 					page2.style.transform='scale(1)'
+					page2.style.webkitTransform='scale(1)'
 
 				}
 			//密码错误提示
@@ -189,10 +191,85 @@
 					else{
 						var dialog=document.querySelector('.show_dialog')
 						dialog.style.transform='scale(1)'
+						dialog.style.webkitTransform='scale(1)'
 						setTimeout(function(){
 							dialog.style.transform='scale(0)'
+							dialog.style.webkitTransform='scale(0)'
 						},1000)
 					}
 				})
+			},
+			onReachEnd:function(){
+				var page3=document.querySelector('.page3')
+				setTimeout(function(){
+					page3.style.transform='perspective(800px) rotate3d(0,1,0,0)';
+					page3.style.webkitTransform='perspective(800px) rotate3d(0,1,0,0)';
+					setTimeout(function(){
+						var bgm=document.querySelector('#bgm');
+						bgm.play()
+						var images1=document.querySelector('.images1')
+						images1.style.display='block';
+						images1.className+=" m1"
+					},600)
+					setTimeout(function(){
+						var images2=document.querySelector('.images2')
+						images2.style.display='block';
+						images2.className+=" m2"
+					},5500)
+					setTimeout(function(){
+						var images3=document.querySelector('.images3')
+						images3.style.display='block';
+						images3.className+=" m3"
+					},10000)
+					setTimeout(function(){
+						var images4=document.querySelector('.images4')
+						images4.style.display='block';
+						images4.className+=" m4"
+					},14500)
+					setTimeout(function(){
+						var images5=document.querySelector('.images5')
+						images5.style.display='block';
+						images5.className+=" m5";
+					},19000)
+					setTimeout(function(){
+						var images6=document.querySelector('.images6')
+						images6.style.display='block';
+						images6.className+=" m6";
+					},23500)
+					setTimeout(function(){
+						var images7=document.querySelector('.images7');
+						images7.style.display='block';
+						images7.className+=" m7";
+					},28000)
+
+					//图片展示完之后弹出end页面
+					setTimeout(function(){
+
+						page3.style.transform='scale(0)';
+						page3.style.webkitTransform='scale(0)';
+
+						var end=document.querySelector('.end')
+						end.style.transform='scale(1)';
+						end.style.webkitTransform='scale(1)';
+						var word=document.querySelector('#word');
+						var _this=word;
+						var str=_this.innerHTML;
+						var index=0;
+						timer=setInterval(function(){
+							var current=str.substr(index,1);
+							if (current=='<') {
+								index=str.indexOf('>',index)+1
+							}
+							else{
+								index++;
+							}
+							_this.innerHTML=str.substring(0,index)+(index&1?'_':'');
+							if (index>str.length) {
+								clearInterval(timer)
+							}
+						},150)
+					},34000)
+				},300)
+				
 			}
 		})
