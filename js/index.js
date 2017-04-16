@@ -202,8 +202,8 @@
 			onReachEnd:function(){
 				var page3=document.querySelector('.page3')
 				setTimeout(function(){
-					page3.style.transform='perspective(800px) rotate3d(0,1,0,0)';
-					page3.style.webkitTransform='perspective(800px) rotate3d(0,1,0,0)';
+					page3.style.transform='translateX(0)';
+					page3.style.webkitTransform='translateX(0)';
 					setTimeout(function(){
 						var bgm=document.querySelector('#bgm');
 						bgm.play()
