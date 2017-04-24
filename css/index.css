@@ -390,7 +390,7 @@ a{
 .m1{	
 	transform: translate(-7.4rem,-7.4rem) rotateZ(-45deg);
 	-webkit-transform: translate(-7.4rem,-7.4rem) rotateZ(-45deg);
-	opacity: 0.6;
+	opacity: 0;
 	-webkit-animation:m1 4s ;
 	animation:m1 4s ;
 	
@@ -482,7 +482,7 @@ a{
 	20%{
 		transform:translate(1rem,7.4rem) rotateZ(35deg) scale(1);
 		-webkit-transform:translate(1rem,7.4rem) rotateZ(35deg) scale(1);
-		opacity: 0.6;
+		opacity: 0;
 	}
 	40%{
 		transform:translate(1rem,7.4rem) rotateZ(25deg) scale(1);
@@ -514,7 +514,7 @@ a{
 	20%{
 		transform:translate(1rem,7.4rem) rotateZ(35deg) scale(1);
 		-webkit-transform:translate(1rem,7.4rem) rotateZ(35deg) scale(1);
-		opacity: 0.6;
+		opacity: 0;
 	}
 	40%{
 		transform:translate(1rem,7.4rem) rotateZ(25deg) scale(1);
@@ -539,26 +539,26 @@ a{
 }
 
 .m3{
-	-webkit-transform: translate(-2.25rem,-7.4rem) rotateZ(90deg);
-	transform: translate(-2.25rem,-7.4rem) rotateZ(90deg);
-	opacity: 0.6;
+	-webkit-transform: translate(-3rem,-7.4rem) rotateZ(90deg);
+	transform: translate(-3rem,-7.4rem) rotateZ(90deg);
+	opacity: 0;
 	-webkit-animation:m3 4s;animation:m3 4s;
 	-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;
 }
 @-webkit-keyframes m3{
 	10%{
-		transform:translate(-2.5rem,-7.4rem) rotateZ(70deg) scale(1);
-		-webkit-transform:translate(-2.5rem,-7.4rem) rotateZ(70deg) scale(1);
-		opacity: 0.6;
+		transform:translate(-3rem,-7.4rem) rotateZ(70deg) scale(1);
+		-webkit-transform:translate(-3rem,-7.4rem) rotateZ(70deg) scale(1);
+		opacity: 0;
 	}
 	20%{
-		-webkit-transform:translate(-2.5rem,-7.4rem) rotateZ(50deg) scale(1);
-		transform:translate(-2.5rem,-7.4rem) rotateZ(50deg) scale(1);
-		opacity: 0.6;
+		-webkit-transform:translate(-3rem,-7.4rem) rotateZ(50deg) scale(1);
+		transform:translate(-3rem,-7.4rem) rotateZ(50deg) scale(1);
+		opacity: 0;
 	}
 	40%{
-		-webkit-transform:translate(-2.5rem,-7.4rem) rotateZ(30deg) scale(1);
-		transform:translate(-2.5rem,-7.4rem) rotateZ(30deg) scale(1);
+		-webkit-transform:translate(-3rem,-7.4rem) rotateZ(30deg) scale(1);
+		transform:translate(-3rem,-7.4rem) rotateZ(30deg) scale(1);
 		opacity: 0.6;
 	}
 	60%{
@@ -581,18 +581,18 @@ a{
 }
 @keyframes m3{
 	10%{
-		transform:translate(-2.5rem,-7.4rem) rotateZ(70deg) scale(1);
-		-webkit-transform:translate(-2.5rem,-7.4rem) rotateZ(70deg) scale(1);
-		opacity: 0.6;
+		transform:translate(-3rem,-7.4rem) rotateZ(70deg) scale(1);
+		-webkit-transform:translate(-3rem,-7.4rem) rotateZ(70deg) scale(1);
+		opacity:0;
 	}
 	20%{
-		-webkit-transform:translate(-2.5rem,-7.4rem) rotateZ(50deg) scale(1);
-		transform:translate(-2.5rem,-7.4rem) rotateZ(50deg) scale(1);
-		opacity: 0.6;
+		-webkit-transform:translate(-3rem,-7.4rem) rotateZ(50deg) scale(1);
+		transform:translate(-3rem,-7.4rem) rotateZ(50deg) scale(1);
+		opacity: 0;
 	}
 	40%{
-		-webkit-transform:translate(-2.5rem,-7.4rem) rotateZ(30deg) scale(1);
-		transform:translate(-2.5rem,-7.4rem) rotateZ(30deg) scale(1);
+		-webkit-transform:translate(-3rem,-7.4rem) rotateZ(30deg) scale(1);
+		transform:translate(-3rem,-7.4rem) rotateZ(30deg) scale(1);
 		opacity: 0.6;
 	}
 	60%{
@@ -616,7 +616,7 @@ a{
 .m4{
 	-webkit-transform: translate(-7.4rem,5rem) rotateZ(90deg);
 	transform: translate(-7.4rem,5rem) rotateZ(90deg);
-	opacity: 0.6;
+	opacity: 0;
 	-webkit-animation:m4 4s;
 	animation:m4 4s;
 	-webkit-animation-fill-mode:forwards;
@@ -626,13 +626,13 @@ a{
 	10%{
 		-webkit-transform:translate(-7.4rem,5rem) rotateZ(70deg) scale(1);
 		transform:translate(-7.4rem,5rem) rotateZ(70deg) scale(1);
-		opacity: 0.8;
+		opacity: 0;
 	}
 	
 	40%{
 		-webkit-transform:translate(-5rem,-5rem) rotateZ(50deg) scale(1);
 		transform:translate(-5rem,-5rem) rotateZ(50deg) scale(1);
-		opacity: 0.9;
+		opacity: 0;
 	}
 	60%{
 		-webkit-transform:translate(-50%,-40%) rotateZ(30deg) scale(1);
@@ -655,13 +655,13 @@ a{
 	10%{
 		-webkit-transform:translate(-7.4rem,5rem) rotateZ(70deg) scale(1);
 		transform:translate(-7.4rem,5rem) rotateZ(70deg) scale(1);
-		opacity: 0.8;
+		opacity: 0;
 	}
 	
 	40%{
 		-webkit-transform:translate(-5rem,-5rem) rotateZ(50deg) scale(1);
 		transform:translate(-5rem,-5rem) rotateZ(50deg) scale(1);
-		opacity: 0.9;
+		opacity: 0;
 	}
 	60%{
 		-webkit-transform:translate(-50%,-40%) rotateZ(30deg) scale(1);
@@ -682,9 +682,9 @@ a{
 }
 
 .m5{
-	-webkit-transform: translate(7.4rem,5rem) rotateZ(90deg);
-	transform: translate(7.4rem,5rem) rotateZ(90deg);
-	opacity: 0.6;
+	-webkit-transform: translate(1rem,5rem) rotateZ(90deg);
+	transform: translate(1rem,5rem) rotateZ(90deg);
+	opacity: 0;
 	-webkit-animation:m5 4s;
 	animation:m5 4s;
 	-webkit-animation-fill-mode:forwards;
@@ -692,15 +692,15 @@ a{
 }
 @-webkit-keyframes m5{
 	10%{
-		-webkit-transform:translate(7.4rem,5rem) rotateZ(70deg) scale(1);
-		transform:translate(7.4rem,5rem) rotateZ(70deg) scale(1);
-		opacity: 0.6;
+		-webkit-transform:translate(1rem,5rem) rotateZ(70deg) scale(1);
+		transform:translate(1rem,5rem) rotateZ(70deg) scale(1);
+		opacity: 0;
 	}
 	
 	40%{
-		-webkit-transform:translate(5rem,2.5rem) rotateZ(50deg) scale(1);
-		transform:translate(5rem,2.5rem) rotateZ(50deg) scale(1);
-		opacity: 0.6;
+		-webkit-transform:translate(1rem,2.5rem) rotateZ(50deg) scale(1);
+		transform:translate(1rem,2.5rem) rotateZ(50deg) scale(1);
+		opacity: 0;
 	}
 	60%{
 		-webkit-transform:translate(-50%,-40%) rotateZ(30deg) scale(1);
@@ -721,15 +721,15 @@ a{
 }
 @keyframes m5{
 	10%{
-		-webkit-transform:translate(7.4rem,5rem) rotateZ(70deg) scale(1);
-		transform:translate(7.4rem,5rem) rotateZ(70deg) scale(1);
-		opacity: 0.6;
+		-webkit-transform:translate(1rem,5rem) rotateZ(70deg) scale(1);
+		transform:translate(1rem,5rem) rotateZ(70deg) scale(1);
+		opacity: 0;
 	}
 	
 	40%{
-		-webkit-transform:translate(5rem,2.5rem) rotateZ(50deg) scale(1);
-		transform:translate(5rem,2.5rem) rotateZ(50deg) scale(1);
-		opacity: 0.6;
+		-webkit-transform:translate(1rem,2.5rem) rotateZ(50deg) scale(1);
+		transform:translate(1rem,2.5rem) rotateZ(50deg) scale(1);
+		opacity: 0;
 	}
 	60%{
 		-webkit-transform:translate(-50%,-40%) rotateZ(30deg) scale(1);
@@ -752,7 +752,7 @@ a{
 .m6{
 	-webkit-transform: translate(-2.5rem,7.4rem) rotateZ(50deg);
 	transform: translate(-2.5rem,7.4rem) rotateZ(50deg);
-	opacity: 0.6;
+	opacity: 0;
 	-webkit-animation:m6 4s;
 	animation:m6 4s;
 	-webkit-animation-fill-mode:forwards;
@@ -762,13 +762,13 @@ a{
 	10%{
 		-webkit-transform:translate(-2.5rem,7.4rem) rotateZ(40deg) scale(1);
 		transform:translate(-2.5rem,7.4rem) rotateZ(40deg) scale(1);
-		opacity: 0.6;
+		opacity: 0;
 	}
 	
 	40%{
 		-webkit-transform:translate(-2.5rem,7.4rem) rotateZ(30deg) scale(1);
 		transform:translate(-2.5rem,7.4rem) rotateZ(30deg) scale(1);
-		opacity: 0.6;
+		opacity: 00;
 	}
 	60%{
 		-webkit-transform:translate(-50%,-40%) rotateZ(20deg) scale(1);
@@ -792,13 +792,13 @@ a{
 	10%{
 		-webkit-transform:translate(-2.5rem,7.4rem) rotateZ(40deg) scale(1);
 		transform:translate(-2.5rem,7.4rem) rotateZ(40deg) scale(1);
-		opacity: 0.6;
+		opacity: 0;
 	}
 	
 	40%{
 		-webkit-transform:translate(-2.5rem,7.4rem) rotateZ(30deg) scale(1);
 		transform:translate(-2.5rem,7.4rem) rotateZ(30deg) scale(1);
-		opacity: 0.6;
+		opacity: 0;
 	}
 	60%{
 		-webkit-transform:translate(-50%,-40%) rotateZ(20deg) scale(1);
@@ -824,7 +824,7 @@ a{
 .m7{
 	-webkit-transform: translate(-2.5rem,-7.4rem) rotateZ(50deg);
 	transform: translate(-2.5rem,-7.4rem) rotateZ(50deg);
-	opacity: 0.6;
+	opacity: 0;
 	-webkit-animation:m7 4s;
 	animation:m7 4s;
 	-webkit-animation-fill-mode:forwards;
@@ -834,13 +834,13 @@ a{
 	10%{
 		-webkit-transform:translate(-2.5rem,-7.4rem) rotateZ(40deg) scale(1);
 		transform:translate(-2.5rem,-7.4rem) rotateZ(40deg) scale(1);
-		opacity: 0.6;
+		opacity: 0;
 	}
 	
 	40%{
 		-webkit-transform:translate(-2.5rem,-7.4rem) rotateZ(30deg) scale(1);
 		transform:translate(-2.5rem,-7.4rem) rotateZ(30deg) scale(1);
-		opacity: 0.6;
+		opacity: 0;
 	}
 	60%{
 		-webkit-transform:translate(-50%,-40%) rotateZ(20deg) scale(1);
@@ -864,13 +864,13 @@ a{
 	10%{
 		-webkit-transform:translate(-2.5rem,-7.4rem) rotateZ(40deg) scale(1);
 		transform:translate(-2.5rem,-7.4rem) rotateZ(40deg) scale(1);
-		opacity: 0.6;
+		opacity: 0;
 	}
 	
 	40%{
 		-webkit-transform:translate(-2.5rem,-7.4rem) rotateZ(30deg) scale(1);
 		transform:translate(-2.5rem,-7.4rem) rotateZ(30deg) scale(1);
-		opacity: 0.6;
+		opacity: 0;
 	}
 	60%{
 		-webkit-transform:translate(-50%,-40%) rotateZ(20deg) scale(1);
