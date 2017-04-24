@@ -38,13 +38,13 @@
 		function deviceMotionHandler(eventData) {
 	        var acceleration =eventData.accelerationIncludingGravity;
 	        var curTime = new Date().getTime();
-	        if ((curTime-last_update)> 10) {
+	        if ((curTime-last_update)> 20) {
 	            var diffTime = curTime -last_update;
 	            last_update = curTime;
 	            x = acceleration.x;
 	            y = acceleration.y;
 	            z = acceleration.z;
-	            var speed = Math.abs(x +y + z - last_x - last_y - last_z) / diffTime * 10000;
+	            var speed = Math.abs(x +y + z - last_x - last_y - last_z) / diffTime * 13000;
 	            if (speed > SHAKE_THRESHOLD && curTime - last_time > 3100 && isShakeble) {
 	             	isShakeble = false;
         			last_time = curTime;
