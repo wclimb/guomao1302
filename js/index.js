@@ -23,7 +23,7 @@
 		//获取加速度信息
 		//通过监听上一步获取到的x, y, z 值在一定时间范围内的变化率，进行设备是否有进行晃动的判断。
 		//而为了防止正常移动的误判，需要给该变化率设置一个合适的临界值。
-		var SHAKE_THRESHOLD = 4000;
+		var SHAKE_THRESHOLD = 6000;
 	    var last_update = 0;
 	    var last_time = 0;
 	    var x;
