@@ -388,8 +388,8 @@ a{
 }
 
 .m1{	
-	transform: translate(-10rem,-10rem) rotateZ(-45deg);
-	-webkit-transform: translate(-10rem,-10rem) rotateZ(-45deg);
+	transform: translate(-7.4rem,-7.4rem) rotateZ(-45deg);
+	-webkit-transform: translate(-7.4rem,-7.4rem) rotateZ(-45deg);
 	opacity: 0.6;
 	-webkit-animation:m1 4s ;
 	animation:m1 4s ;
@@ -402,18 +402,18 @@ a{
 
 @-webkit-keyframes m1{
 	10%{
-		transform:translate(-10rem,-10rem) rotateZ(-40deg) scale(1);
-		-webkit-transform:translate(-10rem,-10rem) rotateZ(-40deg) scale(1);
+		transform:translate(-7.4rem,-7.4rem) rotateZ(-40deg) scale(1);
+		-webkit-transform:translate(-7.4rem,-7.4rem) rotateZ(-40deg) scale(1);
 		opacity: 0.6;
 	}
 	20%{
-		transform:translate(-10rem,-10rem) rotateZ(-35deg) scale(1);
-		-webkit-transform:translate(-10rem,-10rem) rotateZ(-35deg) scale(1);
+		transform:translate(-7.4rem,-7.4rem) rotateZ(-35deg) scale(1);
+		-webkit-transform:translate(-7.4rem,-7.4rem) rotateZ(-35deg) scale(1);
 		opacity: 0.6;
 	}
 	40%{
-		transform:translate(-10rem,-10rem) rotateZ(-25deg) scale(1);
-		-webkit-transform:translate(-10rem,-10rem) rotateZ(-25deg) scale(1);
+		transform:translate(-7.4rem,-7.4rem) rotateZ(-25deg) scale(1);
+		-webkit-transform:translate(-7.4rem,-7.4rem) rotateZ(-25deg) scale(1);
 		opacity: 0.6;
 	}
 	60%{
@@ -435,18 +435,18 @@ a{
 
 @keyframes m1{
 	10%{
-		transform:translate(-10rem,-10rem) rotateZ(-40deg) scale(1);
-		-webkit-transform:translate(-10rem,-10rem) rotateZ(-40deg) scale(1);
+		transform:translate(-7.4rem,-7.4rem) rotateZ(-40deg) scale(1);
+		-webkit-transform:translate(-7.4rem,-7.4rem) rotateZ(-40deg) scale(1);
 		opacity: 0.6;
 	}
 	20%{
-		transform:translate(-10rem,-10rem) rotateZ(-35deg) scale(1);
-		-webkit-transform:translate(-10rem,-10rem) rotateZ(-35deg) scale(1);
+		transform:translate(-7.4rem,-7.4rem) rotateZ(-35deg) scale(1);
+		-webkit-transform:translate(-7.4rem,-7.4rem) rotateZ(-35deg) scale(1);
 		opacity: 0.6;
 	}
 	40%{
-		transform:translate(-10rem,-10rem) rotateZ(-25deg) scale(1);
-		-webkit-transform:translate(-10rem,-10rem) rotateZ(-25deg) scale(1);
+		transform:translate(-7.4rem,-7.4rem) rotateZ(-25deg) scale(1);
+		-webkit-transform:translate(-7.4rem,-7.4rem) rotateZ(-25deg) scale(1);
 		opacity: 0.6;
 	}
 	60%{
