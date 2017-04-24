@@ -379,7 +379,7 @@ a{
 	width:5.193333rem;
 	height:3.84rem;
 	position: absolute;
-	display: none;
+	opacity: 0;
 	left: 50%;
 	top: 30%;
 	border-radius: 0.1rem;
