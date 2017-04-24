@@ -469,7 +469,7 @@ a{
 .m2{
 	transform: translate(7.4rem,7.4rem) rotateZ(45deg);
 	-webkit-transform: translate(7.4rem,7.4rem) rotateZ(45deg);
-	opacity: 0.6;
+	opacity: 0;
 	-webkit-animation:m2 4s;animation:m2 4s;
 	-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;
 }
@@ -477,7 +477,7 @@ a{
 	10%{
 		transform:translate(7.4rem,7.4rem) rotateZ(40deg) scale(1);
 		-webkit-transform:translate(7.4rem,7.4rem) rotateZ(40deg) scale(1);
-		opacity: 0.6;
+		opacity: 0;
 	}
 	20%{
 		transform:translate(7.4rem,7.4rem) rotateZ(35deg) scale(1);
@@ -509,7 +509,7 @@ a{
 	10%{
 		transform:translate(7.4rem,7.4rem) rotateZ(40deg) scale(1);
 		-webkit-transform:translate(7.4rem,7.4rem) rotateZ(40deg) scale(1);
-		opacity: 0.6;
+		opacity: 0;
 	}
 	20%{
 		transform:translate(7.4rem,7.4rem) rotateZ(35deg) scale(1);
