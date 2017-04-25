@@ -4,7 +4,11 @@ html,body,.index,.page2,.page3,.end{
 	height: 100%;
 	background: #202125;
 	overflow: hidden;
-
+	-moz-user-select:none;/*火狐*/
+	-webkit-user-select:none;/*webkit浏览器*/
+	-ms-user-select:none;/*IE10*/
+	-khtml-user-select:none;/*早期浏览器*/
+	user-select:none;
 }
 /*loading动画*/
 
@@ -444,7 +448,7 @@ a{
 	margin:0.12rem  0.08rem;
 }
 .name ul li:active{
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.1);
 }
 .show_dialog{
 	-webkit-transition:all 0.5s;
