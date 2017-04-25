@@ -433,7 +433,7 @@ a{
 	width: 100%;
 	
 	
-}
+}   
 .name ul li{
 	font-size: 0.2rem;
 	color: #fff;
@@ -443,7 +443,9 @@ a{
 	border-radius: 0.133333rem;
 	margin:0.12rem  0.08rem;
 }
-
+.name ul li:active{
+	background: rgba(0,0,0,0.2);
+}
 .show_dialog{
 	-webkit-transition:all 0.5s;
 	transition: all 0.5s;
