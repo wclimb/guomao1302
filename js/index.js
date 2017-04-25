@@ -44,7 +44,7 @@
 	            x = acceleration.x;
 	            y = acceleration.y;
 	            z = acceleration.z;
-	            var speed = Math.abs(x +y + z - last_x - last_y - last_z) / diffTime * 2000;
+	            var speed = Math.abs(x +y + z - last_x - last_y - last_z) / diffTime * 8000;
 	            if (speed > SHAKE_THRESHOLD && curTime - last_time > 3100 && isShakeble) {
 	             	isShakeble = false;
         			last_time = curTime;
