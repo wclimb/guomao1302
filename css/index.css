@@ -253,6 +253,9 @@ a{
 	margin: 0.093333rem;
 	position: relative;
 }
+.num_10 ul li:active{
+	background: #386666;
+}
 .num_10 ul li:nth-child(2):after,.num_10 ul li:nth-child(3):after,.num_10 ul li:nth-child(4):after,.num_10 ul li:nth-child(5):after,.num_10 ul li:nth-child(6):after,.num_10 ul li:nth-child(7):after,.num_10 ul li:nth-child(8):after,.num_10 ul li:nth-child(9):after{
 	
 	position: absolute;
