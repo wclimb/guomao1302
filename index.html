@@ -22,6 +22,11 @@
 	        loadingMask.parentNode.removeChild(loadingMask);
 	    }
 	};
+	if (navigator.vibrate) {
+    navigator.vibrate(2000);
+} else if (navigator.webkitVibrate) {
+    navigator.webkitVibrate(2000);
+}
 	</script>
 <body>
 	<div class="loading">
