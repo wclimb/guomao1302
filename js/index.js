@@ -23,7 +23,7 @@
 		//获取加速度信息
 		//通过监听上一步获取到的x, y, z 值在一定时间范围内的变化率，进行设备是否有进行晃动的判断。
 		//而为了防止正常移动的误判，需要给该变化率设置一个合适的临界值。
-		var SHAKE_THRESHOLD = 6000;
+		var SHAKE_THRESHOLD = 7000;
 	    var last_update = 0;
 	    var last_time = 0;
 	    var x;
@@ -38,13 +38,13 @@
 		function deviceMotionHandler(eventData) {
 	        var acceleration =eventData.accelerationIncludingGravity;
 	        var curTime = new Date().getTime();
-	        if ((curTime-last_update)> 20) {
+	        if ((curTime-last_update)> 30) {
 	            var diffTime = curTime -last_update;
 	            last_update = curTime;
 	            x = acceleration.x;
 	            y = acceleration.y;
 	            z = acceleration.z;
-	            var speed = Math.abs(x +y + z - last_x - last_y - last_z) / diffTime * 13000;
+	            var speed = Math.abs(x +y + z - last_x - last_y - last_z) / diffTime * 16000;
 	            if (speed > SHAKE_THRESHOLD && curTime - last_time > 3100 && isShakeble) {
 	             	isShakeble = false;
         			last_time = curTime;
