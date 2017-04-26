@@ -152,6 +152,8 @@
 		var btn_true=document.querySelector('.btn_true')
 		var swiper = new Swiper('.swiper-container',{
 			loop:true,
+			lazyLoading : true,
+			lazyLoadingInPrevNext : true,
 			onTransitionEnd:function(swiper){
 				var swiper_slide=document.querySelectorAll('.swiper-slide')
 				
