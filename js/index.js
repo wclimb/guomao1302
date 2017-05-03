@@ -275,3 +275,9 @@
 				
 			}
 		})
+
+		var loadingMask = document.querySelector('.loading');
+		setTimeout(function(){
+			loadingMask.style.display='none';
+		},4000)
+	
