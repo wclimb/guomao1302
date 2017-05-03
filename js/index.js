@@ -184,10 +184,10 @@
 								clearInterval(timer);
 								setTimeout(function(){
 									swiper.slideNext();
-								},500)
+								},1000)
 								
 							}
-						},40)
+						},80)
 						
 					}
 					else{
