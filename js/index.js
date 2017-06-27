@@ -1,4 +1,6 @@
 //四个输入框跳转
+window.onload=function(){
+	
 
 		function key1_touchend(){
 			if (document.card.key1.value.length==1) {
@@ -280,4 +282,4 @@
 		setTimeout(function(){
 			loadingMask.style.display='none';
 		},4000)
-	
+	}
